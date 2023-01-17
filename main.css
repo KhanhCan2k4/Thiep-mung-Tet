@@ -1,0 +1,423 @@
+/* thẻ bao chứ thiệp */
+.card-container {
+    /* background-image: url("tải xuống (5).jfif"); */
+
+    /* cursor: pointer; */
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+
+    height: 500px;
+    perspective: 600;
+    position: relative;
+    position: fixed;
+    width: 500px;
+  }
+  /* định dạng cho thiệp  */
+  .card {
+    height: 66%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    width: 99%;
+  }
+  /* hiệu ứng lật thẻ */
+  .card:active {
+    transform: rotateY(180deg);
+  }
+
+  /* Mặt trước của card  */
+  .card .side {
+    backface-visibility: hidden;
+    border-radius: 60px;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+
+    background-image: url("IMG_5534.JPG");
+    background-size: 100%;
+    
+  }
+  /* Mặt sau của card  */
+  .card .back {
+    backface-visibility: hidden;
+    border-radius: 60px;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+
+
+    background: #eaeaed;
+    color: #0087cc;
+    line-height: 150px;
+    text-align: center;
+    transform: rotateY(180deg);
+  }
+
+  /* hiệu ứng hoa anh đào rơi */
+  @import url("https://fonts.googleapis.com/css?family=Unica+One");
+.peddle-center {
+  stop-color: #ffe6f7;
+}
+
+.peddle-outside {
+  stop-color: #ffb3e6;
+}
+
+svg {
+  width: 100vw;
+  height: 100vh;
+}
+
+circle {
+  transform: scale(0.5);
+}
+
+.peddle {
+  transform: rotateY(0deg) rotateZ(0deg) scale(1);
+  -webkit-animation: bloom 5s ease-in-out infinite;
+          animation: bloom 5s ease-in-out infinite;
+}
+
+.blossom {
+  -webkit-animation: blossom 5s ease-in-out infinite;
+          animation: blossom 5s ease-in-out infinite;
+}
+
+.blossom:nth-child(1) {
+  -webkit-animation-delay: -168s;
+          animation-delay: -168s;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+}
+.blossom:nth-child(1) .peddle {
+  -webkit-animation-delay: -168s;
+          animation-delay: -168s;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+}
+
+.blossom:nth-child(2) {
+  -webkit-animation-delay: -245.4s;
+          animation-delay: -245.4s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+.blossom:nth-child(2) .peddle {
+  -webkit-animation-delay: -245.4s;
+          animation-delay: -245.4s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+
+.blossom:nth-child(3) {
+  -webkit-animation-delay: -193.2s;
+          animation-delay: -193.2s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+.blossom:nth-child(3) .peddle {
+  -webkit-animation-delay: -193.2s;
+          animation-delay: -193.2s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+.blossom:nth-child(4) {
+  -webkit-animation-delay: -184.2s;
+          animation-delay: -184.2s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+.blossom:nth-child(4) .peddle {
+  -webkit-animation-delay: -184.2s;
+          animation-delay: -184.2s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+
+.blossom:nth-child(5) {
+  -webkit-animation-delay: -219s;
+          animation-delay: -219s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+.blossom:nth-child(5) .peddle {
+  -webkit-animation-delay: -219s;
+          animation-delay: -219s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+
+.blossom:nth-child(6) {
+  -webkit-animation-delay: -201.6s;
+          animation-delay: -201.6s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+.blossom:nth-child(6) .peddle {
+  -webkit-animation-delay: -201.6s;
+          animation-delay: -201.6s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+
+.blossom:nth-child(7) {
+  -webkit-animation-delay: -163.2s;
+          animation-delay: -163.2s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+.blossom:nth-child(7) .peddle {
+  -webkit-animation-delay: -163.2s;
+          animation-delay: -163.2s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+.blossom:nth-child(8) {
+  -webkit-animation-delay: -150s;
+          animation-delay: -150s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+.blossom:nth-child(8) .peddle {
+  -webkit-animation-delay: -150s;
+          animation-delay: -150s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+.blossom:nth-child(9) {
+  -webkit-animation-delay: -104.4s;
+          animation-delay: -104.4s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+.blossom:nth-child(9) .peddle {
+  -webkit-animation-delay: -104.4s;
+          animation-delay: -104.4s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+
+.blossom:nth-child(10) {
+  -webkit-animation-delay: -20.4s;
+          animation-delay: -20.4s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+.blossom:nth-child(10) .peddle {
+  -webkit-animation-delay: -20.4s;
+          animation-delay: -20.4s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+.blossom:nth-child(11) {
+  -webkit-animation-delay: -49.2s;
+          animation-delay: -49.2s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+.blossom:nth-child(11) .peddle {
+  -webkit-animation-delay: -49.2s;
+          animation-delay: -49.2s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+.blossom:nth-child(12) {
+  -webkit-animation-delay: -129.6s;
+          animation-delay: -129.6s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+.blossom:nth-child(12) .peddle {
+  -webkit-animation-delay: -129.6s;
+          animation-delay: -129.6s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+.blossom:nth-child(13) {
+  -webkit-animation-delay: -240.6s;
+          animation-delay: -240.6s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+.blossom:nth-child(13) .peddle {
+  -webkit-animation-delay: -240.6s;
+          animation-delay: -240.6s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+
+.blossom:nth-child(14) {
+  -webkit-animation-delay: -208.8s;
+          animation-delay: -208.8s;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+}
+.blossom:nth-child(14) .peddle {
+  -webkit-animation-delay: -208.8s;
+          animation-delay: -208.8s;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+}
+
+.blossom:nth-child(15) {
+  -webkit-animation-delay: -148.8s;
+          animation-delay: -148.8s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+.blossom:nth-child(15) .peddle {
+  -webkit-animation-delay: -148.8s;
+          animation-delay: -148.8s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+
+.blossom:nth-child(16) {
+  -webkit-animation-delay: -249.6s;
+          animation-delay: -249.6s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+.blossom:nth-child(16) .peddle {
+  -webkit-animation-delay: -249.6s;
+          animation-delay: -249.6s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+
+.blossom:nth-child(17) {
+  -webkit-animation-delay: -292.8s;
+          animation-delay: -292.8s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+.blossom:nth-child(17) .peddle {
+  -webkit-animation-delay: -292.8s;
+          animation-delay: -292.8s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+.blossom:nth-child(18) {
+  -webkit-animation-delay: -152.4s;
+          animation-delay: -152.4s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+.blossom:nth-child(18) .peddle {
+  -webkit-animation-delay: -152.4s;
+          animation-delay: -152.4s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+
+.blossom:nth-child(19) {
+  -webkit-animation-delay: -181.2s;
+          animation-delay: -181.2s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+.blossom:nth-child(19) .peddle {
+  -webkit-animation-delay: -181.2s;
+          animation-delay: -181.2s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
+
+.blossom:nth-child(20) {
+  -webkit-animation-delay: -7.8s;
+          animation-delay: -7.8s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+.blossom:nth-child(20) .peddle {
+  -webkit-animation-delay: -7.8s;
+          animation-delay: -7.8s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+@-webkit-keyframes blossom {
+  0% {
+    transform: translate(-100px, -100px);
+  }
+  100% {
+    transform: translate(100px, 100px) rotate(20deg);
+  }
+}
+
+@keyframes blossom {
+  0% {
+    transform: translate(-100px, -100px);
+  }
+  100% {
+    transform: translate(100px, 100px) rotate(20deg);
+  }
+}
+@-webkit-keyframes bloom {
+  0% {
+    transform: rotateY(90deg) rotateZ(72deg) scale(0);
+  }
+  50% {
+    transform: rotateY(0deg) rotateZ(0deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(40px, 40px) rotate3d(1, 0.5, 1, 90deg);
+  }
+}
+@keyframes bloom {
+  0% {
+    transform: rotateY(90deg) rotateZ(72deg) scale(0);
+  }
+  50% {
+    transform: rotateY(0deg) rotateZ(0deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(40px, 40px) rotate3d(1, 0.5, 1, 90deg);
+  }
+}
+/*Page Setup*/
+svg {
+  width: 100vw;
+  height: 80vh;
+}
+
+body {
+  /* background: #143d52; */
+  background-color: darkslategrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  height: 10vh;
+  line-height: 10vh;
+  font-size: 8vh;
+  padding: 2.5vh;
+  margin: 0;
+  color: #e0e7eb;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  font-family: "Unica One", cursive;
+}
